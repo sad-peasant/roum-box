@@ -1,0 +1,29 @@
+{
+  "name": "roum-box",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sad-peasant/roum-box.git"
+  },
+  "author": "Vincent Tremblay",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sad-peasant/roum-box/issues"
+  },
+  "homepage": "https://github.com/sad-peasant/roum-box#readme",
+  "scripts": {
+    "start": "node src/index.js",
+    "coverage": "nyc --check-coverage --reporter=text --reporter=lcov mocha",
+    "test": "npm run lint && npm run coverage",
+    "lint": "eslint src test"
+  },
+  "devDependencies": {
+    "eslint": "^4.10.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "mocha": "^4.0.1",
+    "nyc": "^11.3.0"
+  }
+}
